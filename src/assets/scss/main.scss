@@ -1,0 +1,255 @@
+@import "vars";
+@import "fonts";
+@import "css-variables";
+@import "core/custom-properties";
+@import "custom-properties";
+@import "dark-theme";
+@import "core/normalize";
+@import "core/reset";
+@import "core/all";
+@import "core/vue-animations";
+@import "core/_positioning.scss";
+@import "core/toggle-button/toggle-button";
+@import "flistbox";
+//@include flexbox-layout(24);
+
+//@include media-max($bp-menu) {
+
+body {
+    letter-spacing: -0.5px;
+}
+
+main {
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+@include links() {
+    text-decoration: none;
+}
+
+a:not(.btn):hover {
+    text-decoration: underline;
+}
+
+@include links('', '.no-effect') {
+    color: inherit;
+    text-decoration: none;
+}
+
+@include headings() {
+    font-family: $font-family-proxima;
+    letter-spacing: normal;
+}
+
+.mat-5 {
+    margin-top: 16px;
+}
+
+.three-dots {
+    @include zpe-three-dots;
+}
+
+.break-word {
+    word-break: break-word;
+}
+
+.theme-transition, .theme-transition * {
+    transition: background-color $transition-length $transition-func, border-color $transition-length $transition-func;
+}
+
+.f-data-layout {
+    //color: #000;
+
+    .f-row-label {
+        opacity: 0.85;
+    }
+
+    @include flexbox-rows() {
+        margin-inline-end: $f-data-layout-cols-padding-neg !important;
+        margin-inline-start: $f-data-layout-cols-padding-neg !important;;
+    }
+
+    @include flexbox-rows('&') {
+        margin-inline-end: $f-data-layout-cols-padding-neg !important;
+        margin-inline-start: $f-data-layout-cols-padding-neg !important;;
+    }
+
+    @include flexbox-cols() {
+        //padding: 0 $grid-layout-gutter-width-2x $grid-layout-gutter-width-4x;
+        padding: $f-data-layout-cols-padding;
+    }
+}
+
+.f-records-count {
+    /*
+    color: $grey-color-lighter;
+    font-family: $font-family;
+    font-size: 0.9em;
+    */
+    color: $light-gray-color;
+    font-weight: normal;
+    font-size: 26px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.f-subsection {
+    padding-top: 48px;
+
+    > h2 {
+        margin: 0 0 20px 0;
+    }
+}
+
+.query-error {
+    color: $error-color-darker;
+    background-color: $error-color-lightest;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.validator-website {
+    svg {
+        //opacity: 0.65;
+        margin-inline-start: 4px;
+        margin-top: -2px;
+    }
+}
+
+.validator-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        width: auto;
+        max-height: 100%;
+    }
+}
+
+.f-tabs {
+    margin-top: 32px;
+
+    ul {
+        margin: 0 20px;
+
+        li {
+            &:not([aria-selected="true"]) {
+                opacity: 0.6;
+            }
+
+            .f-records-count {
+                font-size: 1em;
+            }
+
+            h2, .h2 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+form {
+    .f-input, .f-select {
+        margin-bottom: 16px;
+
+        label {
+            display: block;
+            font-weight: bold;
+            padding-bottom: 4px;
+            text-align: start;
+        }
+    }
+
+    .form-label {
+        display: block;
+        font-weight: bold;
+        padding-bottom: 4px;
+        text-align: start;
+    }
+}
+
+.f-message {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 8px;
+    font-weight: bold;
+    line-height: 1;
+    align-items: start;
+}
+
+.f-input, .f-select {
+    .f-message {
+        font-size: 14px;
+        width: auto;
+        margin: 0;
+    }
+}
+
+.form-buttons {
+    padding-top: 16px;
+
+    .btn {
+        margin-inline-end: 16px;
+
+        &:last-child {
+            margin-inline-end: 0;
+        }
+    }
+}
+
+.f-window {
+    &.double-body-padding {
+        .body {
+            padding: 0 40px 40px 40px;
+        }
+    }
+}
+
+.TXH {
+    font-size: 0.6em;
+}
+
+.smalltoken {
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+
+    .f-crypto-symbol {
+        margin: 0;
+    }
+}
+
+.number {
+    font-family: sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+@include media-max($bp-large) {
+    .margin-bottom-menu {
+        margin-bottom: 30px;
+    }
+}
+
+@include media-max($bp-medium) {
+    .f-subsection {
+        > h2 {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@include media-max($bp-menu) {
+    main {
+        padding-top: 0;
+    }
+
+    .f-subsection {
+        padding-top: 32px;
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "no_items": "No items.",
+    "loading": "Loading...",
+    "from": "From",
+    "to": "To",
+    "block": "Block",
+    "fee": "Fee",
+    "amount": "Amount",
+    "time": "Time",
+    "timestamp": "Timestamp",
+    "success": "Success",
+    "error": "Error",
+    "pending": "Pending",
+    "transactions": "Transactions",
+    "validators": "Validators",
+    "validator": "Validator",
+    "back_to_home": "Back to home",
+    "created_on": "Created On",
+    "address": "Address",
+    "name": "Name",
+    "yes": "Yes",
+    "no": "No",
+    "contract": "Contract",
+    "version": "Version",
+    "unknown": "Unknown",
+    "optional": "Optional",
+    "required_field": "This field is required",
+    "maximum_allowed_characters_length": "Maximum allowed length is {len} characters",
+    "alert": "Alert",
+    "source_code": "Source Code",
+    "copy_to_clipboard": "Copy {what} to clipboard",
+    "copied_to_clipboard": "{what} copied to clipboard",
+    "copied_to_clipboard_warning": "Warning: Use this address to receive Opera TXH only. If you are receiving TXH-ERC20 you need to use a different address!",
+    "gas_used": "Gas Used",
+    "hash": "Hash",
+    "assets": "Assets",
+    "asset": "Asset",
+    "token": "Token",
+    "token_id": "Token Id",
+    "transfer": "Transfer",
+    "mint": "Mint",
+    "burn": "Burn",
+    "approval": "Approval",
+    "approval_for_all": "Approval for all",
+    "other": "Other",
+
+    "navigation": [
+        {
+            "url": "/",
+            "title": "Home"
+        },
+        {
+            "url": "/transactions",
+            "title": "Transactions"
+        },
+        {
+            "url": "/blocks",
+            "title": "Blocks"
+        },
+        {
+            "url": "/epochs",
+            "title": "Epochs"
+        },
+        {
+            "url": "/staking",
+            "title": "Staking"
+        },
+        {
+            "url": "/assets",
+            "title": "Assets"
+        },
+        {
+            "url": "/contracts",
+            "title": "Contracts"
+        },
+        {
+            "url": "https://pwawallet.tixcash.org/#/",
+            "title": "Wallet"
+        }
+    ],
+
+    "alerts": {
+        "bad_search_string": "Invalid address, block number, or transaction hash. Please enter a valid address, block number, or transaction hash."
+    },
+    "view_home": {
+        "title": "Home",
+        "search_input_placeholder": "Search by addresses, transactions, and blocks",
+        "search_button_label": "Search",
+        "blocks": "Blocks",
+        "validators": "@:validators",
+        "accounts": "Accounts",
+        "transactions": "@:transactions",
+        "back_to_home": "@:back_to_home"
+    },
+    "view_not_found": {
+        "title": "Page not found",
+        "text": "Looks like you've followed a broken link or entered a URL that doesn't exist on this site.",
+        "text2": "We recently redesigned the official explorer, so please ensure any links using the old structure are updated.",
+        "link_title": "@:back_to_home"
+    },
+    "view_transaction_list": {
+        "title": "Transactions",
+        "time": "@:time",
+        "fee": "@:fee",
+        "gas_used": "@:gas_used",
+        "address": "@:address",
+        "amount": "@:amount",
+        "from": "@:from",
+        "to": "@:to",
+        "block": "@:block",
+        "tx_hash": "TX Hash"
+    },
+    "view_transaction_detail": {
+        "title": "Transaction detail",
+        "transaction_not_found": "Transaction not found",
+        "hash": "@:hash",
+        "status": "Status",
+        "from": "@:from",
+        "to": "@:to",
+        "time": "@:time",
+        "amount": "@:amount",
+        "fee": "@:fee",
+        "block": "@:block",
+        "gas_used": "@:gas_used",
+        "gas_limit": "Gas Limit",
+        "gas_price": "Gas Price",
+        "transaction_fee": "Transaction Fee",
+        "input_data": "Input Data",
+        "nonce": "Nonce",
+        "token_txs": "Nested token transactions"
+    },
+    "view_address_detail": {
+        "title": "Address",
+        "assets": "@:assets",
+        "asset": "@:asset",
+        "balance": "Total Balance",
+        "staking": "Staking",
+        "value_in_TXH": "Value in TXH",
+        "value_in_usd": "Value in USD",
+        "available": "Available",
+        "delegated": "Delegated",
+        "delegations": "Delegations",
+        "transactions": "@:transactions",
+        "erc20_transactions": "ERC20 Txns",
+        "erc721_transactions": "ERC721 Txns",
+        "erc1155_transactions": "ERC1155 Txns",
+        "pending_rewards": "Pending Rewards",
+        "stashed_rewards": "Stashed Rewards",
+        "claimed_rewards": "Claimed Rewards"
+    },
+    "view_block_list": {
+        "title": "Blocks",
+        "block": "@:block",
+        "time": "@:time",
+        "age": "Age",
+        "fee": "@:fee",
+        "transaction_count": "Txns"
+    },
+    "view_block_detail": {
+        "title": "Block detail",
+        "block_not_found": "Block not found",
+        "block": "@:block",
+        "block_hash": "Block Hash",
+        "parent_hash": "Parent Hash",
+        "timestamp": "@:timestamp",
+        "transactions": "@:transactions",
+        "transactions_in_block": "transactions in block",
+        "block_transactions": "@:transactions"
+    },
+    "view_validator_list": {
+        "title": "Staking",
+        "validators": "@:validators",
+        "id": "ID",
+        "logo": "Logo",
+        "name": "@:name",
+        "address": "@:address",
+        "poi": "Proof of Importance",
+        "created_on": "@:created_on",
+        "self_staked": "Self-Staked (TXH)",
+        "delegated": "Delegated (TXH)",
+        "total_staked": "Total Staked (TXH)",
+        "link": "Link",
+        "offline": "Offline",
+        "unknown": "@:unknown",
+        "downtime": "Downtime",
+        "flagged": "Flagged",
+        "inactive": "Inactive"
+    },
+    "view_assets": {
+        "title": "@:assets",
+        "title_detail": "Asset detail",
+        "asset": "@:asset",
+        "name": "@:name",
+        "contract": "@:contract",
+        "decimals": "decimals",
+        "price": "Price",
+        "total_supply": "Total supply",
+        "hash": "@:hash",
+        "market_cap": "Market Cap",
+        "symbol": "Symbol",
+        "tixcash_finance_assets": "Tixcash Finance Assets",
+        "all_erc20_tokens": "All ERC20 Tokens"
+    },
+    "view_validators_info": {
+        "last_epoch": "Last Epoch",
+        "epoch_number": "Epoch Number",
+        "end_time": "End Time",
+        "duration": "Duration",
+        "staking_summary": "Staking Summary",
+        "total_self_staked": "Total Self-Staked",
+        "total_delegated": "Total Delegated",
+        "total_staked": "Total Staked",
+        "daily_rewards": "Daily Rewards",
+        "current_reward_rate": "Current Reward Rate",
+        "total_supply": "Total Supply",
+        "fee": "@:fee"
+    },
+    "view_validator_detail": {
+        "title": "Validator detail",
+        "validator_id": "Validator ID",
+        "name": "@:name",
+        "address": "Delegate address",
+        "start_time": "Staking start time",
+        "start_epoch": "Staking start epoch",
+        "validating_power": "Validating power",
+        "amount_staked": "Amount staked",
+        "amount_delegated": "Amount delegated",
+        "staking_total": "Staking total",
+        "active": "Active",
+        "online": "Online",
+        "downtime": "Downtime",
+        "locked_until": "Locked Until",
+        "lock_days": "Lock (Days)",
+        "delegations": "Delegations"
+    },
+    "delegation_list_dt": {
+        "address": "@:address",
+        "created_on": "@:created_on",
+        "created_epoch": "Created on Epoch",
+        "amount": "Amount (TXH)"
+    },
+    "view_contract_list": {
+        "title": "Contracts",
+        "address": "@:address",
+        "name": "@:name",
+        "compiler": "Compiler",
+        "version": "@:version",
+        "validated": "Validated",
+        "timestamp": "Timestamp"
+    },
+    "view_contract_detail": {
+        "name": "@:name",
+        "creator": "Creator",
+        "compiler": "Compiler",
+        "deployed": "Deployed",
+        "validated": "Validated",
+        "transactions": "@:transactions",
+        "abi": "ABI",
+        "source_code": "@:source_code",
+        "support_contact": "Support Contact",
+        "validate_contract": "Validate Contract",
+        "validate": "Validate",
+        "version": "@:version"
+    },
+    "validate_contract_form": {
+        "name": "@:name",
+        "validate_contract": "@:view_contract_detail.validate_contract",
+        "source_code": "@:source_code",
+        "support_contact": "@:view_contract_detail.support_contact",
+        "validate": "@:view_contract_detail.validate",
+        "version": "@:version"
+    },
+    "epoch": {
+        "list_title": "Epochs",
+        "detail_title": "Epoch Detail",
+        "epoch": "Epoch",
+        "end_time": "End Time",
+        "total_base_reward": "Total Base Reward",
+        "total_fee": "Total Fee",
+        "total_tx_reward": "Total Tx Reward"
+    }
+}
